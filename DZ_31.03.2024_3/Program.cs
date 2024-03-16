@@ -36,7 +36,7 @@ class Program
     {
         try
         {
-            DateTime issueDate = new DateTime(2020, 1, 1); // Пример даты выдачи
+            DateTime issueDate = new DateTime(2020, 1, 1);
             InternationalPassport passport = new InternationalPassport("AB1234567", "Иванов Иван Иванович", issueDate);
             WriteLine("Паспорт успешно создан!");
         }
