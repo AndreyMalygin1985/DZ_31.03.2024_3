@@ -16,17 +16,14 @@ class InternationalPassport
         {
             throw new ArgumentException("Номер паспорта не может быть пустым");
         }
-
         if (string.IsNullOrEmpty(fullName))
         {
             throw new ArgumentException("ФИО владельца паспорта не может быть пустым");
         }
-
         if (issueDate > DateTime.Now)
         {
             throw new ArgumentException("Дата выдачи паспорта не может быть в будущем");
         }
-
         this.passportNumber = passportNumber;
         this.fullName = fullName;
         this.issueDate = issueDate;
